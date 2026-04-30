@@ -100,7 +100,8 @@ gap: 20px;
 
 #landing-page nav ul {
     display: flex;
-    gap: 15px; /* Tightened gap between links */
+    gap: 10px;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
