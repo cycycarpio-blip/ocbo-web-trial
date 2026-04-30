@@ -1433,3 +1433,33 @@ font-size: 0.8rem;
 @media (max-width: 850px) {
     .about-grid { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 768px) {
+    /* 1. Ensure the grid container doesn't overflow */
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px; /* Reduce padding for more screen space */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* 2. Make each permit card responsive */
+    .service-item {
+        width: 100% !important; /* Force cards to use full width */
+        max-width: 95%;        /* Keep a tiny margin so they don't touch the edges */
+        margin: 10px auto;      /* Center the cards */
+        box-sizing: border-box;
+        height: auto;           /* Let text dictate the height */
+    }
+
+    /* 3. Adjust text for readability */
+    .service-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .service-item p {
+        font-size: 0.9rem;
+    }
+}
